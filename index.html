@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password home page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="output">
+            <h2 id="password">Abc@123</h2>
+            <button class="copyBtn">copy</button>
+        </div><!--output div close-->
+
+      <div class="optionDetails">
+         <div class="options">
+            <input type="checkbox" id="upperCase" class="option"><label for="upperCase" class="option">UpperCase</label><br>
+            <input type="checkbox" id="lowerCase" class="option"><label for="lowerCase" class="option">LowerCase</label><br>
+            <input type="checkbox" id="numbers" class="option"><label for="numbers" class="option">Numbers</label><br>
+            <input type="checkbox" id="symbols" class="option"><label for="symbols" class="option">Symbols</label>
+         </div><!--options div close-->
+         <div class="optionNote">
+           <p class="note">please select any option acortding your password</p>
+         </div><!--optionNote div close-->
+      </div><!--optionDetails div close-->
+      <div class="passRange">
+          <input type="range" id="rangeInput" min="6" max="15" value="10">
+          <span><p id="rangeId">10</p></span>
+      </div>
+      <button class="generatePassBtn">Generate password</button>
+    </div><!--main div close-->
+    <script src="script.js"></script>
+</body>
+</html>
